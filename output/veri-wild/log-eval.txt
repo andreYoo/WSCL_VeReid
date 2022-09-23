@@ -1,0 +1,57 @@
+DataSet veri-wild loaded
+  subset   | # ids | # images
+  ---------------------------
+        veri-wild train      
+  ---------------------------
+  train    | 'Unknown' |   277791
+  ---------------------------
+        veri-wild large      
+  ---------------------------
+  query    | 10000 |    10000
+  gallery  | 10000 |   128517
+  ---------------------------
+       veri-wild middle      
+  ---------------------------
+  query    |  5000 |     5000
+  gallery  |  5000 |    64389
+  ---------------------------
+        veri-wild small      
+  ---------------------------
+  query    |  3000 |     3000
+  gallery  |  3000 |    38861
+=> Loaded checkpoint 'saved_models/veri-wild/checkpoint.pth.tar'
+best model at epoch: 17
+Test with best model:
+=======Larget set eval======================
+Extract feature from query images
+Extract feature from gallery images
+Computing distance between the two feature groups
+Start to compute metric
+Mean AP: 46.8%
+CMC Scores
+  top-1          71.1%
+  top-5          87.6%
+  top-10         92.0%
+  top-20         95.4%
+========Middle set eval======================
+Extract feature from query images
+Extract feature from gallery images
+Computing distance between the two feature groups
+Start to compute metric
+Mean AP: 56.8%
+CMC Scores
+  top-1          78.7%
+  top-5          92.0%
+  top-10         95.4%
+  top-20         97.6%
+========Small set eval======================
+Extract feature from query images
+Extract feature from gallery images
+Computing distance between the two feature groups
+Start to compute metric
+Mean AP: 64.4%
+CMC Scores
+  top-1          83.0%
+  top-5          94.3%
+  top-10         97.1%
+  top-20         98.6%

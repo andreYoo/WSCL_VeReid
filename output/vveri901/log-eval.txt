@@ -1,0 +1,19 @@
+DataSet vveri901 loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    | 'Unknown' |    25411
+  query    |    40 |     8715
+  gallery  |    40 |    18825
+=> Loaded checkpoint 'saved_models/vveri901/checkpoint.pth.tar'
+best model at epoch: 20
+Test with best model:
+Extract feature from query images
+Extract feature from gallery images
+Computing distance between the two feature groups
+Start to compute metric
+Mean AP: 32.3%
+CMC Scores
+  top-1          43.5%
+  top-5          46.9%
+  top-10         48.8%
+  top-20         51.5%
